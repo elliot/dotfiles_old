@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Run all dotfiles installers.
+
+# Fail immediately
+set -eo pipefail
+
+# Jump up a level
+cd "$(dirname $0)"/..
+
+# Install Homebrew first
+./homebrew/install.sh
+
+# Find the installers and run them iteratively
+find . -name install.sh | grep -v homebrew | while read installer ; do sh -c "${installer}" ; done
