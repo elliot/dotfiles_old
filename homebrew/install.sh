@@ -15,9 +15,31 @@ then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Install homebrew packages
-brew install        \
-    ssh-copy-id     \
+# Install Homebrew packages
+brew install                \
+    caskroom/cask/brew-cask \
+    ssh-copy-id             \
     spark
+
+# Install Homebrew Cask packages
+brew cask install           \
+    alfred                  \
+    dropbox                 \
+    evernote                \
+    github                  \
+    google-chrome           \
+    handbrake               \
+    iterm2                  \
+    sequel-pro              \
+    skype                   \
+    spotify                 \
+    sublime-text            \
+    the-unarchiver          \
+    things                  \
+    transmission            \
+    vagrant                 \
+    virtualbox              \
+    vlc                     \
+    wireshark               \
 
 exit 0
