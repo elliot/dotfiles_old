@@ -24,6 +24,7 @@ brew install                \
 # Install Homebrew Cask packages
 brew cask install           \
     alfred                  \
+    charles                 \
     dropbox                 \
     evernote                \
     github                  \
