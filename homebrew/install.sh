@@ -18,6 +18,7 @@ fi
 # Install Homebrew packages
 brew install                \
     caskroom/cask/brew-cask \
+    jq                      \
     ssh-copy-id             \
     spark
 
